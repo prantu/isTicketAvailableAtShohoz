@@ -31,8 +31,8 @@ while (TicketPaisi== False):
     available_tickets = [s for s in all_tickets if "Sold Out" not in s]
     print "Avaible Tickets Category: %d" % len(available_tickets)
     if len(available_tickets) > 0: #if tickets are available play beep sound
-        Freq = 3000  # Set Frequency To 2500 Hertz
-        Dur = 3000  # Set Duration To 1000 ms == 1 second
+        Freq = 3000
+        Dur = 3000  
         winsound.Beep(Freq, Dur)
     for seats in available_tickets:
         print "{}\t%s".format(colorama.Fore.LIGHTGREEN_EX) % seats
